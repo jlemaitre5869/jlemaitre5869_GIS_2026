@@ -403,9 +403,8 @@
       </h1>
 
       <p>
-        The purpose of this project is to produce an image classification of Utrecht. Through, this project I will look at different methods to classify spatial areas and what are their strengths and weakness.  Through looking at image classification maps one can address the sustainable challenges around how are land use has an impact on our environment and we can do in the future. 
+        The purpose of this project is to produce an image classification of Utrecht. Through, this project I will look at different methods to classify spatial areas and determine what are their strengths and weakness. Through looking at image classification maps one can address the sustainable challenges around how are land use has an impacted our environment.
       </p>
-
       <div class="hero-meta">
 
         <div class="meta-item">
@@ -461,15 +460,15 @@
             <h2>Project Overview</h2>
 
             <p>
-              Before we can start this project we must understand what image classification. Automated land cover classification is important because it is the task of extracting land use class information from multiband raster image. This process provides data to create thematic maps which can be useful for policy makers and urban planning. 
+              Before we can start this project we must understand what image classification is. Automated land cover classification is important because it is the task of extracting land use class information from multiband raster image. This process provides data to create thematic maps which can be useful for policy makers and urban planning. 
             </p>
 
             <p>
-              There are two types of classifications: supervised and unsupervised. Supervised classification classifies images by using the spectral signatures obtained from training samples. Whereas, unsupervised finds spectral classes (or clusters) in a multiband image without the analyst’s intervention. 
+              There are two types of classifications: supervised and unsupervised. Supervised classification, classifies images by using the spectral signatures obtained from training samples. Whereas, unsupervised finds spectral classes (or clusters) in a multiband image without the analyst’s intervention. 
             </p>
 
             <p>
-              The research objective is determine what are the strengths and weaknesses or using supervised, unsupervised or NDVI to classify land use. The has environmental or social significance because it can allow us to determine which is the best machine learning to classify land use. This can then help us how are land use is impacted the natural environment. GIS methods are appropriate for this project because it can perform all three analytical techniques. 
+              The research objective is determine what are the strengths and weaknesses of using supervised, unsupervised or NDVI to classify land use. The has environmental or social significance because it can allow us to determine which is the best machine learning to classify land use. This can then help us understandhow are land use is impacting the natural environment. GIS methods are appropriate for this project because it can perform all three analytical techniques. 
             </p>
 
           </div>
@@ -480,12 +479,12 @@
             <h2>Methods</h2>
 
             <p>
-              To conduct these 3 types of analysis I will be using ArcGIS pro. In ArcGIS pro I added my data, which was an image. Next, I created chart and added multiple spectral profile of the different land uses on my image. Then I made a training sample of my different land uses. Then using my training sample I configured the parameters. Due to this using the Classification Wizard I made both a supervised and unsupervised classification map of my image. Finally, using the raster function I made an NDVI map of my image. 
+              To conduct these 3 types of analysis I will be using ArcGIS pro. In ArcGIS pro I added my data, which was an image. Next, I created chart and added multiple spectral profile of the different land uses on my image. Then I made a training sample of my different land uses. Then using my training sample I configured the parameters. After this I usedthe Classification Wizard tool to make both a supervised and unsupervised classification map of my image. Finally, using the raster function I made an NDVI map of my image. 
             </p>
 
             <ul>
               <li>Data collection = provided satellite image of Utrecht</li>
-              <li>Cartographic design choices = I had to decide what colours to use for my NDVI map. I chose a colour scheme that has both green and red, which is normally associated with when leaves. This is because the public perception is when leaves are green they are healthy and when they are red/brown they are about to die. 
+              <li>Cartographic design choices = I had to decide what colours to use for my NDVI map. I chose a colour scheme that has both green and red. This is because the public perception is when leaves are green they are healthy and when they are red/brown they are about to die. 
 The target audience is the general public, but not the population who is colour blind as they might have trouble distinguishing between red and green. 
 </li>
               <li>Software and tools used = ArcGIS Pro</li>
@@ -499,18 +498,18 @@ The target audience is the general public, but not the population who is colour 
             <h2>Results & Findings</h2>
 
             <p>
-             Supervised:
+             Unsupervised:
 The strength is that it is the easiest to make as it does not required training samples. 
-The weaknesses is that it does not provided the specific type of land use, as the legend/scale was 0,1,2,3. This means that the colour that is allocated to an area is not linked to a land use. Another weakness is that it to some extent randomly allocates the colour scheme to similar colour schemes, meaning that if from arial view to different land uses had the same colour it would be under the same class. For example, it allocated both the river and the highway in the same class. 
+The weaknesses is that it does not provided the specific type of land use, as the legend/scale was 0,1,2,3. This means that the colour that is allocated to an area is not linked to a land use. Another weakness is that it to some extent randomly allocates the colour scheme to areas with a similar colour, meaning that if from arial view two different land uses have the same colour it would be under the same class. For example, it allocated both the river and the highway in the same class. 
 Though despite the random allocating it did separate city biuldings vs natural. The pattern seem to be that the natural landscape mostly surrounded the city.
 
             </p>
 
             <p>
-              Unsupervised:
+              Supervised:
 The strengths of this was that it used training samples, which meant that the class allocation to areas were more accurate.
 However, the weakness is that despite water, urban and natural areas begin clearly assigned, the program struggled differentiating wetland areas and fields/agricultural and forest.
-A unique insight was that there was a lot of wetland areas in Utrecht. (However, this might not be true due to weakness mentioned above)
+A unique insight was that there was a lot of wetland areas in Utrecht. (However, this might not be true due to weakness just mentioned)
             </p>
 
             <p>
@@ -560,11 +559,11 @@ Though this map did provide insight that Utrecht is has a relatively high NDVI, 
             </p>
 
             <p>
-              This limitation of this project was that I could not create a confusion matrix table. Despite me following the steps provided it did not work. The other limitations as mentioned above are the weakness of each of my maps.
+              The limitation of this project was that I could not create a confusion matrix table. Despite me following the steps provided it did not work. The other limitations as mentioned above are the weakness of each of my maps.
             </p>
 
             <p>
-              In for future improvements, I would make a supervised map but do more sample training attempts for each category. This would make the land use classification more accurate. 
+              For future improvements, I would make a supervised map but do more sample training attempts for each category. This would make the land use classification more accurate. 
             </p>
 
           </div>
@@ -583,7 +582,7 @@ Though this map did provide insight that Utrecht is has a relatively high NDVI, 
 
             <p><strong>Course:</strong> UCSCIEESL5	Geographical Information Systems (GIS)</p>
 
-            <p><strong>Instructor:</strong> Britta Kriker</p>
+            <p><strong>Instructor:</strong> Britta Ricker</p>
 
             <p><strong>Date:</strong> Spring 2026</p>
 
@@ -597,23 +596,6 @@ Though this map did provide insight that Utrecht is has a relatively high NDVI, 
             <h3>Software & Tools</h3>
 
             <p>ArcGIS Pro</p>
-
-          </div>
-
-          <!-- DOWNLOADS -->
-          <div class="sidebar-card">
-
-            <h3>Downloads</h3>
-
-            <a href="#" class="button">
-              Download Map PDF
-            </a>
-
-            <br><br>
-
-            <a href="#" class="button">
-              View Interactive Map
-            </a>
 
           </div>
 
